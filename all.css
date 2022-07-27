@@ -1,7 +1,7 @@
 /* color-primary: #891818 */
 
 /* utility */
-* {
+*, header, footer {
   font-family: "Roboto", sans-serif;
   font-style:italic;
   text-align: center;
@@ -62,17 +62,23 @@ h2 {
   background-position: center center;
   width: 100%;
   height: 958px;
-}
-.banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.banner-content {
   width: 304px;
-  height: 100%;
   margin: 0 auto;
   text-align-last: left;
 }
 .banner-content p {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.banner-content h1 span {
   font-size: 24px;
   line-height: 42px;
   font-weight: 600;
@@ -89,6 +95,9 @@ h2 {
 .banner-content figure {
   width: 60px;
   height: 60px;
+}
+.banner-content figure:hover {
+  opacity: 0.6;
 }
 
 .about {
@@ -158,8 +167,6 @@ h2 {
 
 .works {
   margin-bottom: 144px;
-}
-.works ul {
   font-size: 20px;
   line-height: 30px;
 }
